@@ -1,4 +1,4 @@
-```ini
+```text
   MMM      MMM       KKK                          TTTTTTTTTTT      KKK
   MMMM    MMMM       KKK                          TTTTTTTTTTT      KKK
   MMM MMMM MMM  III  KKK  KKK  RRRRRR     OOOOOO      TTT     III  KKK  KKK
@@ -9,13 +9,9 @@
   MikroTik RouterOS 7.20.8 (c) 1999-2026       https://www.mikrotik.com/
 ```
 
-\# Network Interface Naming
+# Network Interface Naming
 
- 
-
-\## Access Port
-
- 
+## Access Port
 
 | Kürzel | Beschreibung | Format | Beispiel |
 
@@ -23,11 +19,7 @@
 
 | `e` | Ethernet Access Port zu einem Subnetz | `e<SWPort>-<netname>` | `e99-netname` |
 
- 
-
-\## To Host
-
- 
+## To Host
 
 | Kürzel | Beschreibung | Format | Beispiel |
 
@@ -39,11 +31,7 @@
 
 | `q1s1` | 1/4 QSFP+-Verbindung zu einem Host | `q1s1<SWPort>-<hostname>-<dstport>` | `q1s1-server01-1` |
 
- 
-
-\## Bond (LACP Gruppe)
-
- 
+## Bond (LACP Gruppe)
 
 | Kürzel | Beschreibung | Format | Beispiel |
 
@@ -51,11 +39,7 @@
 
 | `b` | LACP Bond aus mehreren Switch-Ports | `b<SWPort>-<hostname>` | `b99-server01` |
 
- 
-
-\## VLAN
-
- 
+## VLAN
 
 | Kürzel | Beschreibung | Format | Beispiel |
 
@@ -63,11 +47,7 @@
 
 | `v` | VLAN-Zuordnung zu einem Subnetz | `v<VID>-<netname>` | `v99-netname` |
 
- 
-
-\## Bridge
-
- 
+## Bridge
 
 | Kürzel | Beschreibung | Format | Beispiel |
 
@@ -75,10 +55,6 @@
 
 | `br` | Software-Bridge | `br-<name>` | `br-br0` |
 
- 
+  
+> **Note:** Interface names do not contain spaces. Hyphens (\`-\`) are used as separators.
 
- 
-
-\> **Note:** Interface names do not contain spaces. Hyphens (\`-\`) are used as separators.
-
- 
